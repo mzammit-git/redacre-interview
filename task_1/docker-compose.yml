@@ -1,0 +1,39 @@
+version: '2.4'
+
+services:
+  backend:
+    container_name: backend
+    image: ra-backend:latest
+    networks:
+      - redacre-net
+    ports:
+      - 5000:5000
+    build:
+      context: ./backend
+    restart: always
+  
+  haproxy:
+    container_name: haproxy
+    image: haproxy:custom
+    networks:
+      - redacre-net
+    ports:
+      - 80:80
+    build:
+      context: ./haproxy
+    restart: always
+
+  frontend:
+    container_name: frontend
+    image: ra-frontend:latest
+    networks:
+      - redacre-net
+    build:
+      context: ./frontend
+    depends_on:
+      - "backend"
+    restart: always
+
+networks:
+  redacre-net:
+    driver: bridge
