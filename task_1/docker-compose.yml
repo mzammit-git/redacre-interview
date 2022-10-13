@@ -20,7 +20,7 @@ services:
     networks:
       - redacre-net
     ports:
-      - 80:80
+      - 80:8080
     build:
       context: ./haproxy
     restart: always
