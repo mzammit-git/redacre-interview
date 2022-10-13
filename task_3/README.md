@@ -27,4 +27,4 @@
    minikube kubectl -- apply -f deployments_and_services.yml
    ```
 
-You should now be able to access the node app using http://<ip-of-your-machine>/
+You should now be able to access the node app using http://\<ip-of-your-machine\>/
