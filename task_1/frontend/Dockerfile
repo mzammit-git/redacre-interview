@@ -7,7 +7,6 @@ RUN sed -i 's/localhost/backend/g' src/App.js && npm i -f
 
 # Run stage
 FROM node:16.17.1-alpine3.15
-RUN apk add curl
 USER node
 WORKDIR /frontend_app/
 COPY --from=builder /test-project/sys-stats/ /frontend_app/
