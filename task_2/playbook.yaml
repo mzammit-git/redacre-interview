@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: yes
+  vars:
+  - vpc_region: us-east-1
+  - useast1_key: <provide_key_here>
