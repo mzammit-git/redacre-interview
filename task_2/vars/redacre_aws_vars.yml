@@ -1,6 +1,6 @@
 vpc_region: us-east-1
-aws_access_key: AKIAUAOTWTOBZGSOKGHU
-aws_secret_key: Sf6Fm1SCCEfmrs2xb4l1bmyckoZ/lJeC6eKVYdsM
+aws_access_key: your-key 
+aws_secret_key: your-key
 ec2_key: redacre-ec2-key
 ami_id: ami-08c40ec9ead489470
 instance_type: t2.micro
