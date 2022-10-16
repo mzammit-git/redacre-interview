@@ -11,4 +11,4 @@
    docker-compose up --build -d
    ```
 
-Wait for the contianers to start completely. You should now be able to access the node app using http://\<ip-of-your-machine\>/
+> Wait for the containers to start completely. You should now be able to access the node app using http://\<ip-of-your-machine\>/
