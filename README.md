@@ -5,7 +5,8 @@ Backend and Frontend implementation:
 - Docker files make use of multi-stage builds to minimize image size.
 - Both are based on Alpine images.
 - Containers run as non-root users for security purposes.
-- Frontend App.js file was modified to call *backend:5000/stats* instead of *localhost:5000/stats*.
+- Frontend App.js file was modified to call *backend:5000/stats* instead of *localhost:5000/stats*. 
+    - The API call is proxied by the js application by adding an entry in package.json
     - This was done to use a bridged docker network for inter-container communication using DNS resolutions.
     - Utilised in [task_3](./task_3) to allow API calls to be made to the service instead of the pods directly. 
     
