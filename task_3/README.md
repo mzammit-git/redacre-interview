@@ -2,14 +2,13 @@
 
 1. Clone this repo and navigate to the *redacre-interview* directory
    ```
-   git clone git@github.com:mzammit-git/redacre-interview.git && cd redacre-interview/
+   git clone git@github.com:mzammit-git/redacre-interview.git && cd redacre-interview/task_1/
    ```
 
-2. Setup the required docker images to be used by k8s.
+2. Set up the required docker images to be used by k8s.
    > **Note:** Easiest way is to build the images with docker-compose.
    ```
    eval $(minikube docker-env)
-   cd task_1/
    docker-compose build --parallel
    ```
 
@@ -28,4 +27,4 @@
    minikube tunnel
    ```
 
-You should now be able to access the node app using http://\<ip-of-your-machine\>/
+> You should now be able to access the node app using http://\<ip-of-your-machine\>/
