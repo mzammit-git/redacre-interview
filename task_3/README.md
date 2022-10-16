@@ -25,6 +25,7 @@
 5. Finally deploy the application. Both the backend and frontend are replicated 3 times to showcase replication and load-balancing.
    ```
    minikube kubectl -- apply -f deployments_and_services.yml
+   minikube tunnel
    ```
 
 You should now be able to access the node app using http://\<ip-of-your-machine\>/
