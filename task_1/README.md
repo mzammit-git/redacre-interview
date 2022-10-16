@@ -8,8 +8,7 @@
 2. Build the images and run the docker-compose.yml file.
    ```
    cd task_1/
-   docker-compose build --parallel --no-cache
-   docker-compose run -d
+   docker-compose up --build -d
    ```
 
 Wait for the contianers to start completely. You should now be able to access the node app using http://\<ip-of-your-machine\>/
