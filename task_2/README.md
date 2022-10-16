@@ -4,11 +4,11 @@
    ```
    git clone git@github.com:mzammit-git/redacre-interview.git && cd redacre-interview/task_2/
    ```
-2. Modify ./vars/redacre_aws_vars.yml with your aws access key, secret key etc..
+2. Modify ./vars/redacre_aws_vars.yml with your AWS access key, secret key etc...
    ```
    vi ./vars/redacre_aws_vars.yml
    ```
-3. Install boto3 to allow ansible to interface with aws (if not already installed).
+3. Install boto3 to allow ansible to interface with AWS (if not already installed).
    ```
    pip3 install boto3
    ```  
@@ -16,5 +16,6 @@
    ```
    ansible-playbook -i inventory/ playbook.yml
    ```
-> Wait for conatiners to start. You should now be able to access the UI on http://<IP-of_instance>. 
+> Wait for the containers to start. You should now be able to access the UI on http://<IP-of_instance>. 
+
 > **Note:** The IP of the instance is returned by the ansible play itself.
